@@ -1,0 +1,9 @@
+.listaprodutos {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 5vh;
+}
+
+.categoriasprodutos {
+    justify-content: center;
+}

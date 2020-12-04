@@ -1,0 +1,22 @@
+
+.card {   
+    width: auto;
+    display: flex;
+    text-align: center;
+    margin: 5vh;
+}
+
+.card-img {
+    height: 9rem;
+    align-self: center;
+}
+
+.precofinal {
+    color: red;
+    font-size: 20px;
+}
+
+.itemlista {
+    height: fit-content;
+    width: fit-content;
+}

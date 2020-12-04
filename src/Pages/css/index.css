@@ -1,0 +1,33 @@
+.promobg {
+    background: yellow;
+    text-align: center;
+    padding: 3vh;
+}
+
+.promolinha {
+    justify-content: center;
+}
+
+.promolinha .card {
+    width: auto;
+}
+
+.card-img {
+    width: auto;
+}
+
+.card-body {
+    width: fit-content;
+}
+
+.precofinal {
+    font-size: xx-large;
+}
+
+.sobrebg {
+    margin: 0;
+}
+
+.sobrebg img {
+    width: inherit;
+}
