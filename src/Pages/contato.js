@@ -8,53 +8,58 @@ import './css/contato.css';
 
 export default function Contato() {
 
-    const [comentarios, setComentarios] = useState([]);
+    const [ form, setForm ] = React.useState({
+        nome: "",
+        comentario: ""
+    });
 
-    const controleEnvio = (evento) => {
-        evento.preventDefault();
-        fetch("http://localhost/php/full_stack_music/src/api_comments/products.php", { method: "POST", body: new FormData(evento.target) });
-        getComentario();
-        window.alert("Comentário enviado com secesso !")
+    const [resposta, setResposta] = React.useState(null)
+    
+    function handleChange ({target}) {
+        const {id, value} = target 
+        setForm({...form, [id]:value})
+        console.log({[id]:value})
     }
 
-    function getComentario() {
-        async function showComentarios() {
-            const url = "http://localhost/php/full_stack_music/src/api_comments/products.php";
-            const resposta = await fetch(url);
-            const resultado = await resposta.json();
-            setComentarios(resultado);
-        }
-        showComentarios();
+    function handleSubmit(event) {
+        event.preventDefault() 
+        fetch("http://localhost:3050/contato", {
+            method: "POST", 
+            headers: {"Content-Type" : "application/json"},
+            body: JSON.stringify(form)
+        }).then(res=> {
+            setResposta(res)
+        })
+
+        window.location.reload(false)
     }
 
-    useEffect(() => { getComentario() }, []);
-
-    useEffect(() => { }, [comentarios]);
 
     return (
         <section class="contato">
+            <div>
             <Row>
             <Col className="banner"> 
                 <img src={BannerContato} alt="Fale Conosco e Tire suas Dúvidas" />
             </Col>
-       
+        
             <Col className="formulario"> 
-                <Form method="post" onSubmit={controleEnvio} >
+                <Form method="post" onSubmit={handleSubmit} >
                 <Form.Group as={Row} controlId="formNome">
                     <Form.Label column sm={2}>
                     Nome
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="text" name="nome" id="nome" placeholder="Nome Completo" />
+                    <Form.Control onChange={handleChange} value ={form.nome} type="text" name="nome" id="nome" placeholder="Nome Completo" />
                     </Col>
                 </Form.Group>
 
                 <Form.Group as={Row} controlId="formMensagem">
                     <Form.Label column sm={2}>
-                    
+                    Mensagem
                     </Form.Label>
                     <Col sm={10}>
-                    <textarea type="text" name="mensagem" id="mensagem" placeholder="Deixe sua mensagem!" />
+                    <Form.Control onChange={handleChange} value ={form.comentario} type="text" name="comentario" id="comentario" as="textarea" rows={3} placeholder="Deixe sua mensagem!" />
                     </Col>
                 </Form.Group>
 
@@ -64,36 +69,14 @@ export default function Contato() {
                     </Col>
                 </Form.Group>
                 </Form>
+                
+                {resposta && resposta.ok && alert("Mensagem enviada com sucesso!")}
         </Col>
         </Row>
         <Row>
-        <Container className="text-white comments">
-                <Col sm={9}>
-
-                    {comentarios && comentarios.map(row => {
-                        console.log(comentarios)
-                        if (row.descricao === null) { 
-                            return (
-                                <div className="text-dark" key={row.id}>  
-                                    Cliente: {row.nome} <br />
-                                    Mensagem: {row.mensagem}  <br />
-                                </div>
-                        )
-
-                        } else{
-                            return (
-                                <div className="text-dark" key={row.id}>  
-                                    Cliente: {row.nome} <br />
-                                    Mensagem: {row.mensagem}  <br />
-                                    Comprou: {row.descricao} <br />
-                                </div>
-                            )
-                        }
-                        })
-                    }
-                </Col>
-            </Container>
+  
         </Row>
+        </div>
         </section>
     )
 }

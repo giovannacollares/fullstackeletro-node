@@ -2,7 +2,7 @@
 
 include "../includes/conexaodb.php";
 
-$result = $conexao->query("SELECT * FROM produtos");  
+$result = $conexao->query("SELECT * FROM produtos;");  
 $produtos = [];  
 
 while ($row = mysqli_fetch_assoc($result)){     
