@@ -40,7 +40,7 @@ function Menu(props) {
             <Navbar.Collapse id="menu-navprincipal">
             <Nav activeKey={location.pathname} className="m-auto align-center">
                 <Nav.Item>
-            <Nav.Link className="pl-5 pr-5 py-0 mt-3" as={Link} href="/index" to="/index">Página Principal</Nav.Link>
+            <Nav.Link className="pl-5 pr-5 py-0 mt-3" as={Link} href="/" to="/">Página Principal</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
             <Nav.Link className="pl-5 pr-5 py-0 mt-3" as={Link} href="/produtos" to="/produtos">Eletrodomésticos</Nav.Link>
