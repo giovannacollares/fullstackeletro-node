@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+<div align="center"><img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=yellow&style=for-the-badge"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Full Stack Eletro
+A 'Full Stack Eletro - Node' é um projeto em React e Node.js
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+<div align="center"> <img width="500px" src="/src/logo.svg"> <br>
+<em>Programadores tem 30% de desconto em todos os produtos da loja!</em> :satisfied: </div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Índice
+* [Sobre o projeto](#sobre-o-projeto)
+* [Tech](#tecnologias)
+* [Updates](#atualizações)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Sobre o projeto
+A 'Full Stack Eletro' é uma e-commerce especializada em eletrodomésticos sendo desenvolvida para o curso de Desenvolvimento Full Stack da Recode Pro.<br>
+A cada módulo do curso serão implementadas novas tecnologias. Você pode conferir as tecnologias usadas até o momento na sessão abaixo.<br>
 
-### `npm test`
+	
+## Tecnologias
+Atualmente rodando com:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [x] React
+- [x] Node.js
+- [x] React-Bootstrap
+- [x] Express
 
-### `npm run build`
+	
+## Atualizações
+Algumas atualizações feitas na última versão e futuras implementações:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [x] Layout repaginado
+- [x] Refatoração do back-end para Node.js
+- [ ] Ajustar design da página de produtos
+- [ ] Adicionar um carrinho de compras
