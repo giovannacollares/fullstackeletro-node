@@ -4,7 +4,7 @@ import { Produto, ListaCategorias } from '../Components/Produto';
 
 import './css/produtos.css';
 
-import { Container, Row } from 'react-bootstrap';;
+import { Row } from 'react-bootstrap';
 
 
 export default function Produtos() {

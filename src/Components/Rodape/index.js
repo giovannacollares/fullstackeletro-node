@@ -18,18 +18,18 @@ export default function Rodape() {
             (21) 9 7654-3421 <i class="fab fa-whatsapp"></i> <br />
             fseletro@contato.com <br />
             Dúvidas, Elogios e Reclamações: <br />
-            <a href="">Nos mande uma mensagem</a>
+            <a href="#">Nos mande uma mensagem</a>
           </p>
       </Col>
       <Col sm={5} className="col-5 col-md">
         <h5>Produtos</h5>
         <ul className="list-unstyled text-small">
-          <li><a className="text-muted" href="">Geladeira</a></li>
-          <li><a className="text-muted" href="">Fogões</a></li>
-          <li><a className="text-muted" href="">Batedeiras</a></li>
-          <li><a className="text-muted" href="">Torradeiras</a></li>
-          <li><a className="text-muted" href="">Microondas</a></li>
-          <li><a className="text-muted" href="">Outros</a></li>
+          <li><a className="text-muted" href="#">Geladeira</a></li>
+          <li><a className="text-muted" href="#">Fogões</a></li>
+          <li><a className="text-muted" href="#">Batedeiras</a></li>
+          <li><a className="text-muted" href="#">Torradeiras</a></li>
+          <li><a className="text-muted" href="#">Microondas</a></li>
+          <li><a className="text-muted" href="#">Outros</a></li>
         </ul>
       </Col>
       <Col sm={5} className="col-5 col-md">

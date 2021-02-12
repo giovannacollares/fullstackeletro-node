@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-import { Form, Row, Col, Button, Container } from 'react-bootstrap';
+import { Form, Row, Col, Button } from 'react-bootstrap';
 
 import BannerContato from './imagens/bannercontato.gif';
 
@@ -23,7 +23,7 @@ export default function Contato() {
 
     function handleSubmit(event) {
         event.preventDefault() 
-        fetch("http://localhost:3050/contato", {
+        fetch("http://localhost:3050/comentario", {
             method: "POST", 
             headers: {"Content-Type" : "application/json"},
             body: JSON.stringify(form)
