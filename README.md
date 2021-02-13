@@ -26,6 +26,9 @@ Atualmente rodando com:
 - [x] React-Bootstrap
 - [x] Express
 
+## Screenshots
+<img width="90%" src="./public/screenshot.png">
+	
 	
 ## Atualizações
 Algumas atualizações feitas na última versão e futuras implementações:
