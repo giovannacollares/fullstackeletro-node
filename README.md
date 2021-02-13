@@ -23,8 +23,7 @@ Atualmente rodando com:
 
 - [x] React
 - [x] Node.js
-- [x] React-Bootstrap
-- [x] Express
+- [x] MongoDB
 
 ## Screenshots
 <img width="90%" src="./public/screenshot.png">
