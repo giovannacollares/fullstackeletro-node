@@ -35,5 +35,7 @@ Algumas atualizações feitas na última versão e futuras implementações:
 
 - [x] Layout repaginado
 - [x] Refatoração do back-end para Node.js
+- [x] Migração do Banco de Dados para NoSQL (MongoDB)
+- [x] Aplicação do Lazy-Loading
 - [ ] Ajustar design da página de produtos
 - [ ] Adicionar um carrinho de compras
